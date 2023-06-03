@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-
 import 'package:adhoc_chat_app/controllers/app_controller.dart';
 import 'package:filesystem_picker/filesystem_picker.dart';
 import 'package:flutter/material.dart';
@@ -67,6 +66,7 @@ class _ChatState extends State<Chat> with WidgetsBindingObserver {
         wifiP2PInfo = event;
       });
     });
+    //Listening for peers connection to the stream
     _streamPeers = _flutterP2pConnectionPlugin.streamPeers().listen((event) {
       setState(() {
         peers = event;

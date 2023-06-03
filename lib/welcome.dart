@@ -1,7 +1,6 @@
 import 'package:adhoc_chat_app/controllers/app_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'chat.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
